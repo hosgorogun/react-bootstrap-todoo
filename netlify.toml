@@ -1,0 +1,13 @@
+[build]
+  # Base directory (projenin kökü)
+  base = "/"
+  # React projesi için build komutu
+  command = "npm run build"
+  # Publish directory: build klasörü
+  publish = "build"
+
+# SPA yönlendirmesi: tüm bilinmeyen URL'ler index.html'e yönlendirilecek
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
